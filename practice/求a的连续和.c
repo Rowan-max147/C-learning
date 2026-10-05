@@ -1,0 +1,23 @@
+/*输入两个整数a和n，a的范围是[0,9]，n的范围是[1,8]，求数列之和S = a+aa+aaa+...+aaa...a（n个a）。如a为2、n为8时输出的是2+22+222+...+22222222的和。
+输入格式：
+输入在一行中给出两个整数，先后表示a和n。
+输出格式：
+在一行中输出要求的数列之和。*/
+#include <stdio.h>
+int main()
+{
+	int a,n;
+	scanf("%d %d",&a,&n);
+	int cnt=1;
+	int sum=0;
+	int result = 0;
+	do{
+		cnt++;
+		result=result*10+a;
+		sum+=result;
+	}while(cnt<=n);
+	
+	printf("%d",sum);
+	
+	return 0;
+}
