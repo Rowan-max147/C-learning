@@ -1,0 +1,23 @@
+# ===== C / C++ 编译产物（不需要上传）=====
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.dll
+*.dSYM/
+*.ilk
+*.pdb
+*.idb
+
+# ===== 编辑器 / IDE =====
+.vscode/
+.idea/
+*.swp
+*~
+
+# ===== 系统临时文件 =====
+Thumbs.db
+desktop.ini
+.DS_Store
